@@ -4,6 +4,7 @@
 /**
  * Note: The returned array must be malloced, assume caller calls free().
  */
+#include <malloc.h>
 int* twoSum(int* nums, int numsSize, int target, int* returnSize){
     int flag=0;
     int i=0;
