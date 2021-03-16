@@ -4,14 +4,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-bool isPalindrome(int x);
-int main()
-{
-    int a=12321,b=123321;
-    cout<<isPalindrome(a)<<endl;
-    cout<<isPalindrome(b)<<endl;
-    return 0;
-}
 bool isPalindrome(int x){
     if(x<0)
         return false;
