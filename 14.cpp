@@ -10,15 +10,6 @@
 #include <string>
 using namespace std;
 string longestCommonPrefix(vector<string>& strs);
-int main()
-{
-    vector<string> vector;
-    vector.push_back("abide");
-    vector.push_back("abccede");
-    vector.push_back("abddd");
-    cout<<longestCommonPrefix(vector);
-    return 0;
-}
 string longestCommonPrefix(vector<string>& strs)
 {
     int minLen=200;
