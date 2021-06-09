@@ -4,12 +4,6 @@
 #include "allMyNeed.h"
 using namespace std;
 bool isValid(string s);
-int main()
-{
-    string s="()";
-    cout<<isValid(s)<<endl;
-    return 0;
-}
 bool isValid(string s){
     string stack="";
     for(int i=0;i<s.size();i++)
