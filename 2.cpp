@@ -15,16 +15,54 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2)
 {
     ListNode *result=new ListNode();
     ListNode *index=result;
-    if (l1->val==0)
+    if (l1->val==0&&l1->next==nullptr)
         result=l2;
-    else if(l2->val==0)
+    else if(l2->val==0&&l2->next==nullptr)
         result=l1;
     else{
-        while (l1!= nullptr&&l2!= nullptr)
+        while (l1->next!= nullptr&&l2->next!= nullptr)
         {
             index->val=l1->val+l2->val;
+            ListNode *tmp=new ListNode();
+            index->next=tmp;
+            index=index->next;
+            l1=l1->next;
+            l2=l2->next;
+        }
+        index->val=l1->val+l2->val;
+        if (l1->next== nullptr&&l2->next!=nullptr)
+            index->next=l2->next;
+        else if((l2->next== nullptr&&l1->next!=nullptr))
+            index->next=l1->next;
+        index=result;
+        bool isAdd= false;
+        while (index->next!= nullptr)
+        {
+            if (isAdd)
+            {
+                index->val++;
+                isAdd= false;
+            }
+            if (index->val>=10)
+            {
+                isAdd= true;
+                index->val%=10;
+                index=index->next;
+            }
+            else
+                index=index->next;
+        }
+        if(isAdd)
+            index->val++;
+        if (index!=nullptr&&index->next==nullptr&&index->val>=10)
+        {
+            index->val%=10;
+            ListNode *tmp=new ListNode();
+            index->next=tmp;
+            index=index->next;
+            index->val=1;
         }
     }
-
+    return result;
 
 }
