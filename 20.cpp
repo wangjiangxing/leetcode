@@ -1,8 +1,7 @@
 //
 // Created by cruisin on 2021/3/19.
 //有效的括号给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串 s ，判断字符串是否有效。
-#include <iostream>
-#include <string>
+#include "allMyNeed.h"
 using namespace std;
 bool isValid(string s);
 int main()

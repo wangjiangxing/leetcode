@@ -1,8 +1,7 @@
 //
 // Created by cruisin on 2021/3/15.
 //
-#include <iostream>
-#include <vector>
+#include "allMyNeed.h"
 using namespace std;
 bool isPalindrome(int x){
     if(x<0)

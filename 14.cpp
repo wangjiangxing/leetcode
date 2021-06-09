@@ -5,9 +5,7 @@
 //思路：一步步查看公共前缀，直到不相等或者到某一个字符串尾部退出
 //执行用时：0 ms 在所有 C++ 提交中击败了 100.00%的用户
 //内存消耗：8.9 MB, 在所有 C++ 提交中击败了85.32%的用户
-#include <iostream>
-#include <vector>
-#include <string>
+#include "allMyNeed.h"
 using namespace std;
 string longestCommonPrefix(vector<string>& strs);
 string longestCommonPrefix(vector<string>& strs)

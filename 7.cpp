@@ -8,7 +8,7 @@
 //来源：力扣（LeetCode）
 //链接：https://leetcode-cn.com/problems/reverse-integer
 //著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
-#include<iostream>
+#include "allMyNeed.h"
 using namespace std;
 int reverse(int x) {
     int flag2=0;//用来判断是不是已经有一个非0实数了
