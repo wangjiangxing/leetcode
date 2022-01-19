@@ -30,15 +30,3 @@ int removeDuplicates(vector<int>& nums) {
         nums.pop_back();
     return nums.size();
 }
-int main()
-{
-    vector<int> nums={1,2,2,3,4,5,5,6,7,7,7,8,8,9,9,9,9,9,10};
-    int num= removeDuplicates(nums);
-    cout<<num<<endl;
-    vector<int>::iterator v = nums.begin();
-    while( v != nums.end()) {
-        cout << "value of v = " << *v << endl;
-        v++;
-    }
-    return 0;
-}
